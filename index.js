@@ -15,11 +15,11 @@ const app = {};
 
 // Init function
 app.init = () => {
-    // Start the server
-    server.init()
+  // Start the server
+  server.init()
 
-    // Start the workers
-      workers.init() 
+  // Start the workers
+  workers.init() 
 }
 
  
