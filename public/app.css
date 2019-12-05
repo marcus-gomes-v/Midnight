@@ -16,6 +16,17 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
     color: #1a1a1a;
     border-width: 0;
   }
+
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
   
   .clear{
     float: none;
@@ -78,10 +89,18 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
       width: 50px;
   }
   
+  .header a.logo-mark {
+    font-size: 36px;
+    line-height: 47px;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding-left: 9px;
+}
   .content {
     margin-top: 150px;
     width: 1000px;
     margin: 150px auto;
+    flex: 1 0 auto;
   }
   
   .footer{
@@ -92,6 +111,7 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
     border-width: 1px 0 0 0;
     border-color: #fff;
     border-style: solid;
+    flex-shrink: 0;
   }
   
   .footer .copyright{
@@ -212,6 +232,10 @@ body,p,h1,h2,h3,h4,h5,h6,div,span,header,footer,img,a,a:hover,a:active,a:visited
     border-radius: 2px;
     padding: 7px 1%;
     width: 100%;
+  }
+
+  input[type="checkbox"] {
+    width: auto;
   }
   
   .checkboxGroup input{

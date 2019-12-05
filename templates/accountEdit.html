@@ -1,62 +1,62 @@
-<h1>Account Settings</h1>
+<h1>Configurações da conta</h1>
 
 <hr />
 
-<h2>Edit your account details</h2>
+<h2>Edite os detalhes da sua conta</h2>
 
 <div class="formWrapper">
   <form id="accountEdit1" action="/api/users" method="PUT">
     <input type="hidden" name="_method" value="PUT"/>
     <div class="formError"></div>
-    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <div class="formSuccess">Suas alterações foram salvas</div>
     <input class="hiddenPhoneNumberInput"  type="hidden" name="phone" />
     <div class="inputWrapper">
-      <div class="inputLabel">Phone Number</div>
+      <div class="inputLabel">Celular</div>
       <input class="disabled displayPhoneInput" type="text" name="displayPhone" disabled />
     </div>
     <div class="inputWrapper">
-      <div class="inputLabel">First Name</div>
-      <input class="firstNameInput" type="text" name="firstName" placeholder="John" />
+      <div class="inputLabel">Nome</div>
+      <input class="firstNameInput" type="text" name="firstName" placeholder="Rodolfo" />
     </div>
     <div class="inputWrapper">
-      <div class="inputLabel">Last Name</div>
-      <input class="lastNameInput" type="text" name="lastName" placeholder="Smith" />
+      <div class="inputLabel">Sobrenome</div>
+      <input class="lastNameInput" type="text" name="lastName" placeholder="Rodrigues" />
     </div>
     <div class="inputWrapper ctaWrapper">
-      <button type="submit" class="cta green">Save Changes</button>
+      <button type="submit" class="cta green">Salvar alterações</button>
     </div>
   </form>
 </div>
 
 <hr />
-<h2>Change Your Password</h2>
+<h2>Mude sua senha</h2>
 <div class="formWrapper">
   <form id="accountEdit2" action="/api/users" method="PUT">
     <input type="hidden" name="_method" value="PUT"/>
     <div class="formError"></div>
-    <div class="formSuccess">Your New Password Has Been Saved</div>
+    <div class="formSuccess">Sua nova senha foi salva</div>
     <input class="hiddenPhoneNumberInput" type="hidden" name="phone" />
     <div class="inputWrapper">
-      <div class="inputLabel">Choose a New Password</div>
-      <input type="password" name="password" placeholder="Make it a good one!" />
+      <div class="inputLabel">Escolha uma nova senha</div>
+      <input type="password" name="password" placeholder="Crie uma boa!" />
     </div>
     <div class="inputWrapper ctaWrapper">
-      <button type="submit" class="cta green">Save Password</button>
+      <button type="submit" class="cta green">Salvar Senha</button>
     </div>
   </form>
 </div>
 
 
 <hr />
-<h2>Delete Your Account</h2>
+<h2>Deletar sua conta</h2>
 <div class="formWrapper">
   <form id="accountEdit3" action="/api/users" method="DELETE">
     <input type="hidden" name="_method" value="DELETE"/>
     <div class="formError"></div>
-    <div class="warning">Warning: This action cannot be undone. Dont click this button on accident!</div>
+    <div class="warning">Aviso: Esta ação não pode ser desfeita. Não clique neste botão por acidente!</div>
     <input class="hiddenPhoneNumberInput" type="hidden" name="phone" />
     <div class="inputWrapper ctaWrapper">
-      <button type="submit" class="cta red">Delete Account</button>
+      <button type="submit" class="cta red">Deletar conta</button>
     </div>
   </form>
 </div>
