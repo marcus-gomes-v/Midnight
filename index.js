@@ -5,9 +5,9 @@
 
  // Load Dependencies
 
- const server = require(`${__dirname}/lib/server`)
- const workers = require(`${__dirname}/lib/workers`)
- const cli = require(`${__dirname}/lib/cli`)
+ const server = require('./lib/server');
+ const workers = require(`./lib/workers`)
+ const cli = require(`./lib/cli`)
 
 
  // Declare the App
